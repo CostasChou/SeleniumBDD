@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.274">
+<testcase classname="Car registration form. User wants to use car registration form to submit their application" name="Successful form submission with valid car registration and year" time="0.078">
+<system-out><![CDATA[Given user navigates to the car registration webpage........................passed
+When user enters a valid car registration "ABC1234".........................passed
+And user selects the year "2017" from the dropdown menu.....................passed
+And user clicks on the Submit button........................................passed
+Then a success message is displayed containing the car registration "ABC1234" and the year "2017".passed
+]]></system-out>
+</testcase>
+</testsuite>

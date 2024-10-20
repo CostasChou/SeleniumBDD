@@ -1,0 +1,109 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2024-10-20T16:14:48.214Z",
+        "line": 6,
+        "name": "Successful form submission with valid car registration and year",
+        "description": "",
+        "id": "car-registration-form.-user-wants-to-use-car-registration-form-to-submit-their-application;successful-form-submission-with-valid-car-registration-and-year",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigates to the car registration webpage",
+            "match": {
+              "location": "StepDefinitions.CarRegistrationSubmissionSteps.user_navigates_to_the_car_registration_webpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters a valid car registration \"ABC1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ABC1234\"",
+                  "offset": 37
+                }
+              ],
+              "location": "StepDefinitions.CarRegistrationSubmissionSteps.user_enters_a_valid_car_registration(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user selects the year \"2017\" from the dropdown menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2017\"",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefinitions.CarRegistrationSubmissionSteps.user_selects_the_year_from_the_dropdown_menu(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on the Submit button",
+            "match": {
+              "location": "StepDefinitions.CarRegistrationSubmissionSteps.user_clicks_on_the_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "a success message is displayed containing the car registration \"ABC1234\" and the year \"2017\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ABC1234\"",
+                  "offset": 63
+                },
+                {
+                  "val": "\"2017\"",
+                  "offset": 86
+                }
+              ],
+              "location": "StepDefinitions.CarRegistrationSubmissionSteps.a_success_message_is_displayed_containing_the_car_registration_and_the_year(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NominalCase"
+          }
+        ]
+      }
+    ],
+    "name": "Car registration form. User wants to use car registration form to submit their application",
+    "description": "",
+    "id": "car-registration-form.-user-wants-to-use-car-registration-form-to-submit-their-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/car_registration_submission.feature",
+    "tags": []
+  }
+]
